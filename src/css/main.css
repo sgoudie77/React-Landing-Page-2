@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+} 
+
+body {
+    background-image: url(../images/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* navbar styles start here */
+header {
+    width: 50%;
+    height: 60px;
+    line-height: 60px;
+}
+
+ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.link-pad {
+    padding-top: 3.25em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #014421;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-right: 25px;
+    letter-spacing: 1.5px;
+}
+
+ul li a:hover {
+    color: #009B77;
+}
+
+.logo {
+    height: 5em;
+    margin-top: 0;
+    padding-top: 0;
+}
+/* navbar style end here */
+
+/* main section styles start here */
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #fff;
+    padding: .4em .6em;
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.6);
+    box-shadow: 1px 1px 7px #fff;
+}
+
+.title-text {
+    font-size: 1.8em;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+}
+
+button {
+    padding: .3em .5em;
+    padding-left: .6em;
+    margin-bottom: .35em;
+    margin-top: .15em;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ffffff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #000000;
+    font-weight: bold;
+    background-color: #009B77;
+    border: 1px solid #000000;
+    transition: 0.3s ease-in-out;
+}
+/* main section styles end here */
+
+/* footer styles start here */
+footer {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons i {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.icons i:hover {
+    color: #009B77;
+    transition: 0.3s ease-in-out;
+}
+/* footer styles end here */
+
+/* responsive styles start here */
+@media (max-width: 568px) {
+    ul li a {
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .title-text {
+        font-size: 1.2em;
+    }
+}
+/* responsive styles end here */
